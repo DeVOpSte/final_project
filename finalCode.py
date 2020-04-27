@@ -8,10 +8,10 @@ import numpy as np
 # introducing excel file to program
 
 class FileInput:
-    #fileInput = input("Please enter excel file path")
+    fileInput = input("Please enter excel file path")
     path = '/Users/Rishi/Desktop/module 11/Carlist.xlsx'
 
-    excelFile = path
+    excelFile = fileInput
     file1 = xlrd.open_workbook(excelFile)
     sheet = file1.sheet_by_name('Data')
     sheet1 = file1.sheet_by_index(0)
